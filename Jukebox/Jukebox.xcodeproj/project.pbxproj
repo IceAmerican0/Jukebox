@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5C6B036D2B95931200BACB1E /* JukeboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6B036C2B95931200BACB1E /* JukeboxApp.swift */; };
-		5C6B036F2B95931200BACB1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6B036E2B95931200BACB1E /* ContentView.swift */; };
 		5C6B03712B95931300BACB1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C6B03702B95931300BACB1E /* Assets.xcassets */; };
 		5C6B03742B95931300BACB1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C6B03732B95931300BACB1E /* Preview Assets.xcassets */; };
 		5C6B037E2B95931400BACB1E /* JukeboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6B037D2B95931400BACB1E /* JukeboxTests.swift */; };
 		5C6B03882B95931400BACB1E /* JukeboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6B03872B95931400BACB1E /* JukeboxUITests.swift */; };
 		5C6B038A2B95931400BACB1E /* JukeboxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6B03892B95931400BACB1E /* JukeboxUITestsLaunchTests.swift */; };
+		5C6B03972B95947000BACB1E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6B03962B95947000BACB1E /* ListView.swift */; };
+		5C6B039D2B95C36F00BACB1E /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6B039C2B95C36F00BACB1E /* JsonParser.swift */; };
+		5C6B039F2B96E76900BACB1E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6B039E2B96E76900BACB1E /* NetworkManager.swift */; };
+		5C6B03A22B96EA5100BACB1E /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6B03A12B96EA5100BACB1E /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		5C6B03692B95931200BACB1E /* Jukebox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jukebox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6B036C2B95931200BACB1E /* JukeboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeboxApp.swift; sourceTree = "<group>"; };
-		5C6B036E2B95931200BACB1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C6B03702B95931300BACB1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C6B03732B95931300BACB1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C6B03792B95931400BACB1E /* JukeboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JukeboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,10 @@
 		5C6B03832B95931400BACB1E /* JukeboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JukeboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6B03872B95931400BACB1E /* JukeboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeboxUITests.swift; sourceTree = "<group>"; };
 		5C6B03892B95931400BACB1E /* JukeboxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeboxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C6B03962B95947000BACB1E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		5C6B039C2B95C36F00BACB1E /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		5C6B039E2B96E76900BACB1E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5C6B03A12B96EA5100BACB1E /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,9 @@
 		5C6B036B2B95931200BACB1E /* Jukebox */ = {
 			isa = PBXGroup;
 			children = (
-				5C6B036C2B95931200BACB1E /* JukeboxApp.swift */,
-				5C6B036E2B95931200BACB1E /* ContentView.swift */,
+				5C6B03992B95C20000BACB1E /* Network */,
+				5C6B03982B9597C000BACB1E /* View */,
+				5C6B03A02B96E99600BACB1E /* Model */,
 				5C6B03702B95931300BACB1E /* Assets.xcassets */,
 				5C6B03722B95931300BACB1E /* Preview Content */,
 			);
@@ -125,6 +132,32 @@
 				5C6B03892B95931400BACB1E /* JukeboxUITestsLaunchTests.swift */,
 			);
 			path = JukeboxUITests;
+			sourceTree = "<group>";
+		};
+		5C6B03982B9597C000BACB1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C6B036C2B95931200BACB1E /* JukeboxApp.swift */,
+				5C6B03962B95947000BACB1E /* ListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C6B03992B95C20000BACB1E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5C6B039E2B96E76900BACB1E /* NetworkManager.swift */,
+				5C6B039C2B95C36F00BACB1E /* JsonParser.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5C6B03A02B96E99600BACB1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C6B03A12B96EA5100BACB1E /* SearchResult.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C6B036F2B95931200BACB1E /* ContentView.swift in Sources */,
+				5C6B039F2B96E76900BACB1E /* NetworkManager.swift in Sources */,
+				5C6B03972B95947000BACB1E /* ListView.swift in Sources */,
+				5C6B03A22B96EA5100BACB1E /* SearchResult.swift in Sources */,
 				5C6B036D2B95931200BACB1E /* JukeboxApp.swift in Sources */,
+				5C6B039D2B95C36F00BACB1E /* JsonParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
